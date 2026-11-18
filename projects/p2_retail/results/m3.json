@@ -1,0 +1,256 @@
+{
+  "invoices": 18386,
+  "items": 3656,
+  "basket_size_median": 15.0,
+  "basket_size_mean": 21.0,
+  "basket_size_p90": 46.0,
+  "hot_items": [
+    {
+      "item": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "support": 0.108
+    },
+    {
+      "item": "REGENCY CAKESTAND 3 TIER",
+      "support": 0.093
+    },
+    {
+      "item": "JUMBO BAG RED RETROSPOT",
+      "support": 0.087
+    },
+    {
+      "item": "PARTY BUNTING",
+      "support": 0.075
+    },
+    {
+      "item": "ASSORTED COLOUR BIRD ORNAMENT",
+      "support": 0.075
+    }
+  ],
+  "min_support": 0.01,
+  "min_conf": 0.5,
+  "level_stats": [
+    {
+      "k": 1,
+      "joined": 3656,
+      "pruned": 3656,
+      "frequent": 628
+    },
+    {
+      "k": 2,
+      "joined": 196878,
+      "pruned": 196878,
+      "frequent": 338
+    },
+    {
+      "k": 3,
+      "joined": 872,
+      "pruned": 495,
+      "frequent": 79
+    },
+    {
+      "k": 4,
+      "joined": 80,
+      "pruned": 43,
+      "frequent": 3
+    }
+  ],
+  "frequent": 1048,
+  "rules": 347,
+  "top_rules": [
+    {
+      "lhs": "REGENCY TEA PLATE PINK",
+      "rhs": "REGENCY TEA PLATE ROSES + REGENCY TEA PLATE GREEN",
+      "support": 0.01,
+      "confidence": 0.826,
+      "lift": 66.3
+    },
+    {
+      "lhs": "REGENCY TEA PLATE PINK",
+      "rhs": "REGENCY TEA PLATE GREEN",
+      "support": 0.011,
+      "confidence": 0.902,
+      "lift": 61.4
+    },
+    {
+      "lhs": "POPPY'S PLAYHOUSE LIVINGROOM",
+      "rhs": "POPPY'S PLAYHOUSE BEDROOM + POPPY'S PLAYHOUSE KITCHEN",
+      "support": 0.01,
+      "confidence": 0.738,
+      "lift": 53.4
+    },
+    {
+      "lhs": "REGENCY SUGAR BOWL GREEN",
+      "rhs": "REGENCY MILK JUG PINK",
+      "support": 0.011,
+      "confidence": 0.769,
+      "lift": 52.0
+    },
+    {
+      "lhs": "REGENCY TEA PLATE ROSES",
+      "rhs": "REGENCY TEA PLATE PINK",
+      "support": 0.011,
+      "confidence": 0.601,
+      "lift": 49.3
+    },
+    {
+      "lhs": "REGENCY TEA PLATE GREEN",
+      "rhs": "REGENCY TEA PLATE ROSES",
+      "support": 0.012,
+      "confidence": 0.848,
+      "lift": 47.5
+    },
+    {
+      "lhs": "POPPY'S PLAYHOUSE LIVINGROOM",
+      "rhs": "POPPY'S PLAYHOUSE BEDROOM",
+      "support": 0.011,
+      "confidence": 0.813,
+      "lift": 47.3
+    },
+    {
+      "lhs": "SET/6 RED SPOTTY PAPER CUPS",
+      "rhs": "SET/6 RED SPOTTY PAPER PLATES",
+      "support": 0.013,
+      "confidence": 0.828,
+      "lift": 46.8
+    }
+  ],
+  "frequent_pairs": 338,
+  "frequent_pairs_min_lift": 1.28,
+  "frequent_pairs_lift_below_1": 0,
+  "hot_rhs": {
+    "top50_by_confidence": {
+      "hot_rhs": 11,
+      "rhs_support_median": 0.038
+    },
+    "top50_by_lift": {
+      "hot_rhs": 0,
+      "rhs_support_median": 0.017
+    }
+  },
+  "antecedents": 271,
+  "antecedents_conf_lift_disagree": 103,
+  "hot_example": {
+    "lhs": "JUMBO BAG APPLES",
+    "best_by_confidence": {
+      "rhs": "JUMBO BAG RED RETROSPOT",
+      "confidence": 0.489,
+      "lift": 5.6,
+      "rhs_support": 0.087
+    },
+    "best_by_lift": {
+      "rhs": "JUMBO BAG PEARS",
+      "confidence": 0.435,
+      "lift": 17.0,
+      "rhs_support": 0.026
+    }
+  },
+  "sensitivity": [
+    {
+      "min_support": 0.03,
+      "min_count": 552,
+      "items": 96,
+      "counted": 8216,
+      "frequent": 96,
+      "max_len": 1,
+      "rules": 0
+    },
+    {
+      "min_support": 0.02,
+      "min_count": 368,
+      "items": 209,
+      "counted": 25412,
+      "frequent": 251,
+      "max_len": 3,
+      "rules": 32
+    },
+    {
+      "min_support": 0.015,
+      "min_count": 276,
+      "items": 364,
+      "counted": 69814,
+      "frequent": 473,
+      "max_len": 3,
+      "rules": 77
+    },
+    {
+      "min_support": 0.01,
+      "min_count": 184,
+      "items": 628,
+      "counted": 201072,
+      "frequent": 1048,
+      "max_len": 4,
+      "rules": 347
+    },
+    {
+      "min_support": 0.0075,
+      "min_count": 138,
+      "items": 880,
+      "counted": 392254,
+      "frequent": 1927,
+      "max_len": 5,
+      "rules": 1294
+    }
+  ],
+  "segments": [
+    {
+      "cluster": "沉睡低价值",
+      "invoices": 2066,
+      "share_since_sep": 0.195,
+      "frequent": 141,
+      "rules": 18,
+      "christmas_rule_share": 0.0,
+      "top_rule": {
+        "lhs": "PINK REGENCY TEACUP AND SAUCER",
+        "rhs": "GREEN REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER",
+        "support": 0.02,
+        "confidence": 0.7,
+        "lift": 24.1
+      }
+    },
+    {
+      "cluster": "新近低频",
+      "invoices": 1707,
+      "share_since_sep": 0.748,
+      "frequent": 249,
+      "rules": 19,
+      "christmas_rule_share": 0.579,
+      "top_rule": {
+        "lhs": "WOODEN TREE CHRISTMAS SCANDINAVIAN",
+        "rhs": "WOODEN HEART CHRISTMAS SCANDINAVIAN + WOODEN STAR CHRISTMAS SCANDINAVIAN",
+        "support": 0.021,
+        "confidence": 0.72,
+        "lift": 17.1
+      }
+    },
+    {
+      "cluster": "中坚老客",
+      "invoices": 4954,
+      "share_since_sep": 0.35,
+      "frequent": 305,
+      "rules": 48,
+      "christmas_rule_share": 0.021,
+      "top_rule": {
+        "lhs": "PINK HAPPY BIRTHDAY BUNTING",
+        "rhs": "BLUE HAPPY BIRTHDAY BUNTING",
+        "support": 0.022,
+        "confidence": 0.8,
+        "lift": 30.5
+      }
+    },
+    {
+      "cluster": "核心大客户",
+      "invoices": 9659,
+      "share_since_sep": 0.377,
+      "frequent": 306,
+      "rules": 53,
+      "christmas_rule_share": 0.019,
+      "top_rule": {
+        "lhs": "PINK REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER",
+        "rhs": "GREEN REGENCY TEACUP AND SAUCER",
+        "support": 0.022,
+        "confidence": 0.861,
+        "lift": 22.5
+      }
+    }
+  ]
+}

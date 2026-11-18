@@ -1,0 +1,52 @@
+[
+  {
+    "model": "逻辑回归 (m2)",
+    "cv_ap": 0.762,
+    "cv_ap_std": 0.033,
+    "test_ap": 0.796,
+    "test_roc_auc": 0.935,
+    "test_precision": 0.788,
+    "test_recall": 0.598,
+    "test_f1": 0.68
+  },
+  {
+    "model": "决策树 (max_depth=5)",
+    "cv_ap": 0.743,
+    "cv_ap_std": 0.048,
+    "test_ap": 0.753,
+    "test_roc_auc": 0.919,
+    "test_precision": 0.811,
+    "test_recall": 0.652,
+    "test_f1": 0.723
+  },
+  {
+    "model": "随机森林",
+    "cv_ap": 0.922,
+    "cv_ap_std": 0.02,
+    "test_ap": 0.905,
+    "test_roc_auc": 0.981,
+    "test_precision": 0.926,
+    "test_recall": 0.786,
+    "test_f1": 0.85
+  },
+  {
+    "model": "HistGradientBoosting",
+    "cv_ap": 0.948,
+    "cv_ap_std": 0.009,
+    "test_ap": 0.947,
+    "test_roc_auc": 0.985,
+    "test_precision": 0.905,
+    "test_recall": 0.848,
+    "test_f1": 0.876
+  },
+  {
+    "model": "HistGradientBoosting (调参后)",
+    "cv_ap": 0.953,
+    "cv_ap_std": 0.009,
+    "test_ap": 0.946,
+    "test_roc_auc": 0.986,
+    "test_precision": 0.907,
+    "test_recall": 0.866,
+    "test_f1": 0.886
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "model": "逻辑回归 + 只做标准化",
+    "cv_ap": 0.75,
+    "cv_ap_std": 0.043,
+    "test_ap": 0.778,
+    "test_roc_auc": 0.932,
+    "test_precision": 0.831,
+    "test_recall": 0.482,
+    "test_f1": 0.61
+  },
+  {
+    "model": "逻辑回归 + 按列预处理",
+    "cv_ap": 0.762,
+    "cv_ap_std": 0.033,
+    "test_ap": 0.796,
+    "test_roc_auc": 0.935,
+    "test_precision": 0.788,
+    "test_recall": 0.598,
+    "test_f1": 0.68
+  }
+]

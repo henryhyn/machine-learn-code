@@ -1,0 +1,107 @@
+{
+  "raw": {
+    "rows": 541909,
+    "date_min": "2010-12-01 08:26:00",
+    "date_max": "2011-12-09 12:50:00",
+    "missing_customer_share": 0.249,
+    "duplicated_rows": 5268,
+    "return_rows": 9288,
+    "return_rows_all_negative_qty": true,
+    "negative_qty_not_return": 1336,
+    "zero_price_rows": 2515,
+    "negative_price_rows": 2,
+    "uk_row_share": 0.914,
+    "countries": 38,
+    "saturday_rows": 0,
+    "hour_min": 6,
+    "hour_max": 20
+  },
+  "cleaning": [
+    {
+      "step": "完全重复的行",
+      "rows_removed": 5268
+    },
+    {
+      "step": "CustomerID 缺失",
+      "rows_removed": 135037
+    },
+    {
+      "step": "非商品行 (邮费、手工调整、折扣等)",
+      "rows_removed": 1915
+    },
+    {
+      "step": "单价 <= 0",
+      "rows_removed": 33
+    }
+  ],
+  "clean_rows": 399656,
+  "clean_return_rows": 8506,
+  "clean_customers": 4362,
+  "clean_products": 3676,
+  "purchase_invoices": 18402,
+  "return_invoices": 3383,
+  "rfm_customers": 4320,
+  "dropped_nonpositive_monetary": 42,
+  "one_time_share": 0.346,
+  "top10pct_monetary_share": 0.601,
+  "rfm_describe": [
+    {
+      "feature": "Recency",
+      "mean": 93.1,
+      "median": 51.0,
+      "max": 374.0,
+      "skew": 1.25,
+      "skew_log1p": -0.32
+    },
+    {
+      "feature": "Frequency",
+      "mean": 4.3,
+      "median": 2.0,
+      "max": 206.0,
+      "skew": 11.94,
+      "skew_log1p": 1.21
+    },
+    {
+      "feature": "Monetary",
+      "mean": 1914.3,
+      "median": 650.4,
+      "max": 278778.0,
+      "skew": 21.54,
+      "skew_log1p": 0.37
+    }
+  ],
+  "segments": [
+    {
+      "segment": "高价值活跃",
+      "customers": 1327,
+      "recency_median": 12.0,
+      "frequency_median": 6.0,
+      "monetary_median": 1843.0,
+      "monetary_share": 0.711
+    },
+    {
+      "segment": "高价值渐冷",
+      "customers": 1010,
+      "recency_median": 74.0,
+      "frequency_median": 3.0,
+      "monetary_median": 1141.0,
+      "monetary_share": 0.212
+    },
+    {
+      "segment": "低价值新近",
+      "customers": 401,
+      "recency_median": 19.0,
+      "frequency_median": 1.0,
+      "monetary_median": 286.0,
+      "monetary_share": 0.015
+    },
+    {
+      "segment": "低价值沉睡",
+      "customers": 1582,
+      "recency_median": 165.0,
+      "frequency_median": 1.0,
+      "monetary_median": 278.0,
+      "monetary_share": 0.062
+    }
+  ]
+}

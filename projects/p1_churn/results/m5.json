@@ -1,0 +1,67 @@
+[
+  {
+    "feature": "complains",
+    "ap_drop_mean": 0.224,
+    "ap_drop_std": 0.032
+  },
+  {
+    "feature": "frequency_of_use",
+    "ap_drop_mean": 0.154,
+    "ap_drop_std": 0.022
+  },
+  {
+    "feature": "seconds_of_use",
+    "ap_drop_mean": 0.138,
+    "ap_drop_std": 0.019
+  },
+  {
+    "feature": "call_failure",
+    "ap_drop_mean": 0.104,
+    "ap_drop_std": 0.011
+  },
+  {
+    "feature": "subscription_length",
+    "ap_drop_mean": 0.102,
+    "ap_drop_std": 0.013
+  },
+  {
+    "feature": "status",
+    "ap_drop_mean": 0.057,
+    "ap_drop_std": 0.01
+  },
+  {
+    "feature": "age_group",
+    "ap_drop_mean": 0.05,
+    "ap_drop_std": 0.007
+  },
+  {
+    "feature": "distinct_called_numbers",
+    "ap_drop_mean": 0.037,
+    "ap_drop_std": 0.011
+  },
+  {
+    "feature": "frequency_of_sms",
+    "ap_drop_mean": 0.02,
+    "ap_drop_std": 0.005
+  },
+  {
+    "feature": "customer_value",
+    "ap_drop_mean": 0.009,
+    "ap_drop_std": 0.004
+  },
+  {
+    "feature": "charge_amount",
+    "ap_drop_mean": 0.0,
+    "ap_drop_std": 0.002
+  },
+  {
+    "feature": "age",
+    "ap_drop_mean": 0.0,
+    "ap_drop_std": 0.0
+  },
+  {
+    "feature": "tariff_plan",
+    "ap_drop_mean": -0.002,
+    "ap_drop_std": 0.0
+  }
+]

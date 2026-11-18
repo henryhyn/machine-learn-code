@@ -1,0 +1,22 @@
+[
+  {
+    "model": "多数类基线",
+    "cv_ap": 0.156,
+    "cv_ap_std": 0.001,
+    "test_ap": 0.157,
+    "test_roc_auc": 0.5,
+    "test_precision": 0.0,
+    "test_recall": 0.0,
+    "test_f1": 0.0
+  },
+  {
+    "model": "逻辑回归 (原始特征)",
+    "cv_ap": 0.756,
+    "cv_ap_std": 0.041,
+    "test_ap": 0.78,
+    "test_roc_auc": 0.933,
+    "test_precision": 0.821,
+    "test_recall": 0.491,
+    "test_f1": 0.615
+  }
+]

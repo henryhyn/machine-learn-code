@@ -1,0 +1,124 @@
+{
+  "customers": 4320,
+  "k_scan": [
+    {
+      "k": 2,
+      "inertia": 6446.7,
+      "silhouette": 0.432
+    },
+    {
+      "k": 3,
+      "inertia": 4827.1,
+      "silhouette": 0.339
+    },
+    {
+      "k": 4,
+      "inertia": 3896.5,
+      "silhouette": 0.334
+    },
+    {
+      "k": 5,
+      "inertia": 3246.5,
+      "silhouette": 0.318
+    },
+    {
+      "k": 6,
+      "inertia": 2819.6,
+      "silhouette": 0.316
+    },
+    {
+      "k": 7,
+      "inertia": 2511.9,
+      "silhouette": 0.303
+    },
+    {
+      "k": 8,
+      "inertia": 2309.3,
+      "silhouette": 0.297
+    }
+  ],
+  "k": 4,
+  "profile": [
+    {
+      "cluster": "沉睡低价值",
+      "customers": 1542,
+      "recency_median": 187.0,
+      "frequency_median": 1.0,
+      "monetary_median": 294.0,
+      "monetary_share": 0.066
+    },
+    {
+      "cluster": "新近低频",
+      "customers": 886,
+      "recency_median": 20.0,
+      "frequency_median": 2.0,
+      "monetary_median": 400.0,
+      "monetary_share": 0.051
+    },
+    {
+      "cluster": "中坚老客",
+      "customers": 1186,
+      "recency_median": 52.0,
+      "frequency_median": 4.0,
+      "monetary_median": 1314.0,
+      "monetary_share": 0.24
+    },
+    {
+      "cluster": "核心大客户",
+      "customers": 706,
+      "recency_median": 9.0,
+      "frequency_median": 10.0,
+      "monetary_median": 3540.0,
+      "monetary_share": 0.644
+    }
+  ],
+  "crosstab_vs_rfm_segments": {
+    "沉睡低价值": {
+      "高价值活跃": 0,
+      "高价值渐冷": 166,
+      "低价值新近": 0,
+      "低价值沉睡": 1376
+    },
+    "新近低频": {
+      "高价值活跃": 275,
+      "高价值渐冷": 33,
+      "低价值新近": 401,
+      "低价值沉睡": 177
+    },
+    "中坚老客": {
+      "高价值活跃": 378,
+      "高价值渐冷": 779,
+      "低价值新近": 0,
+      "低价值沉睡": 29
+    },
+    "核心大客户": {
+      "高价值活跃": 674,
+      "高价值渐冷": 32,
+      "低价值新近": 0,
+      "低价值沉睡": 0
+    }
+  },
+  "ari_vs_rfm_segments": 0.507,
+  "stability": {
+    "n_init_1": {
+      "min": 0.884,
+      "mean": 0.958
+    },
+    "n_init_10": {
+      "min": 0.993,
+      "mean": 0.996
+    }
+  },
+  "ari_gmm_vs_kmeans": 0.422,
+  "no_log": {
+    "cluster_sizes": [
+      6,
+      103,
+      1074,
+      3137
+    ],
+    "smallest_cluster": 6,
+    "smallest_cluster_monetary_share": 0.132,
+    "silhouette": 0.613
+  }
+}

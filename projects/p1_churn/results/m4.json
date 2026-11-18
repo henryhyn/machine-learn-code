@@ -1,0 +1,62 @@
+[
+  {
+    "model": "谁都不联系",
+    "threshold": null,
+    "contacted": 0,
+    "caught": 0,
+    "recall": 0.0,
+    "precision": 0.0,
+    "profit": 0,
+    "test_ap": null
+  },
+  {
+    "model": "所有人都联系",
+    "threshold": null,
+    "contacted": 713,
+    "caught": 112,
+    "recall": 1.0,
+    "precision": 0.157,
+    "profit": 407,
+    "test_ap": null
+  },
+  {
+    "model": "m3 模型 + 阈值 0.5",
+    "threshold": 0.5,
+    "contacted": 106,
+    "caught": 97,
+    "recall": 0.866,
+    "precision": 0.915,
+    "profit": 864,
+    "test_ap": 0.947
+  },
+  {
+    "model": "m3 模型 + 理论阈值 0.1",
+    "threshold": 0.1,
+    "contacted": 130,
+    "caught": 102,
+    "recall": 0.911,
+    "precision": 0.785,
+    "profit": 890,
+    "test_ap": 0.947
+  },
+  {
+    "model": "class_weight=balanced + 阈值 0.5",
+    "threshold": 0.5,
+    "contacted": 109,
+    "caught": 99,
+    "recall": 0.884,
+    "precision": 0.908,
+    "profit": 881,
+    "test_ap": 0.948
+  },
+  {
+    "model": "按利润调阈值 (交叉验证)",
+    "threshold": 0.03,
+    "contacted": 151,
+    "caught": 106,
+    "recall": 0.946,
+    "precision": 0.702,
+    "profit": 909,
+    "test_ap": 0.947
+  }
+]

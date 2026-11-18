@@ -1,0 +1,15 @@
+[project]
+name = "machine-learn-code"
+version = "0.1.0"
+description = "《传统机器学习》专栏的配套代码：每章的演示和两个配套项目"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "scikit-learn>=1.9,<1.10",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,216 @@
+{
+  "invoices": 18386,
+  "hour_min": 6,
+  "hour_max": 20,
+  "inject_rate": 0.01,
+  "injected_per_repeat": 183,
+  "repeats": 5,
+  "inspect_top": 20,
+  "inspect": {
+    "孤立森林": {
+      "categories": {
+        "极小单 (≤2 件)": 17,
+        "单品批量 (1–2 种商品，≥1000 件)": 3
+      },
+      "single_item_share": 1.0,
+      "examples": [
+        {
+          "invoice": "570554",
+          "n_items": 1.0,
+          "qty": 1.0,
+          "amount": 0.38,
+          "max_line_qty": 1.0,
+          "cluster": "核心大客户",
+          "category": "极小单 (≤2 件)"
+        },
+        {
+          "invoice": "542736",
+          "n_items": 1.0,
+          "qty": 1.0,
+          "amount": 0.55,
+          "max_line_qty": 1.0,
+          "cluster": "中坚老客",
+          "category": "极小单 (≤2 件)"
+        },
+        {
+          "invoice": "540945",
+          "n_items": 1.0,
+          "qty": 1.0,
+          "amount": 0.85,
+          "max_line_qty": 1.0,
+          "cluster": "中坚老客",
+          "category": "极小单 (≤2 件)"
+        },
+        {
+          "invoice": "573995",
+          "n_items": 1.0,
+          "qty": 3000.0,
+          "amount": 960.0,
+          "max_line_qty": 3000.0,
+          "cluster": "中坚老客",
+          "category": "单品批量 (1–2 种商品，≥1000 件)"
+        },
+        {
+          "invoice": "556446",
+          "n_items": 1.0,
+          "qty": 1.0,
+          "amount": 649.5,
+          "max_line_qty": 1.0,
+          "cluster": "中坚老客",
+          "category": "极小单 (≤2 件)"
+        }
+      ]
+    },
+    "LOF (n_neighbors=50)": {
+      "categories": {
+        "其他 1–2 种商品的单子": 8,
+        "多品类的单子": 7,
+        "30 天内被同一客户冲销": 2,
+        "单品批量 (1–2 种商品，≥1000 件)": 2,
+        "极小单 (≤2 件)": 1
+      },
+      "single_item_share": 0.65,
+      "examples": [
+        {
+          "invoice": "581483",
+          "n_items": 1.0,
+          "qty": 80995.0,
+          "amount": 168469.6,
+          "max_line_qty": 80995.0,
+          "cluster": "新近低频",
+          "category": "30 天内被同一客户冲销"
+        },
+        {
+          "invoice": "556444",
+          "n_items": 1.0,
+          "qty": 60.0,
+          "amount": 38970.0,
+          "max_line_qty": 60.0,
+          "cluster": "中坚老客",
+          "category": "30 天内被同一客户冲销"
+        },
+        {
+          "invoice": "578126",
+          "n_items": 1.0,
+          "qty": 100.0,
+          "amount": 4.0,
+          "max_line_qty": 100.0,
+          "cluster": "新近低频",
+          "category": "其他 1–2 种商品的单子"
+        },
+        {
+          "invoice": "543688",
+          "n_items": 2.0,
+          "qty": 50.0,
+          "amount": 330.8,
+          "max_line_qty": 48.0,
+          "cluster": "核心大客户",
+          "category": "其他 1–2 种商品的单子"
+        },
+        {
+          "invoice": "556484",
+          "n_items": 195.0,
+          "qty": 2183.0,
+          "amount": 2108.7,
+          "max_line_qty": 1515.0,
+          "cluster": "中坚老客",
+          "category": "多品类的单子"
+        }
+      ]
+    }
+  },
+  "largest_invoice": {
+    "invoice": "581483",
+    "description": "PAPER CRAFT , LITTLE BIRDIE",
+    "qty": 80995,
+    "amount": 168469.6
+  },
+  "injection": [
+    {
+      "factor": 100,
+      "method": "孤立森林",
+      "ap": 0.182,
+      "ap_std": 0.06,
+      "recall_at_k": 0.178
+    },
+    {
+      "factor": 100,
+      "method": "LOF (n_neighbors=50)",
+      "ap": 0.039,
+      "ap_std": 0.007,
+      "recall_at_k": 0.073
+    },
+    {
+      "factor": 100,
+      "method": "规则：金额",
+      "ap": 0.199,
+      "ap_std": 0.029,
+      "recall_at_k": 0.224
+    },
+    {
+      "factor": 100,
+      "method": "规则：某行件数 / 该商品常见件数",
+      "ap": 0.563,
+      "ap_std": 0.039,
+      "recall_at_k": 0.439
+    },
+    {
+      "factor": 10,
+      "method": "孤立森林",
+      "ap": 0.02,
+      "ap_std": 0.004,
+      "recall_at_k": 0.026
+    },
+    {
+      "factor": 10,
+      "method": "LOF (n_neighbors=50)",
+      "ap": 0.025,
+      "ap_std": 0.003,
+      "recall_at_k": 0.036
+    },
+    {
+      "factor": 10,
+      "method": "规则：金额",
+      "ap": 0.023,
+      "ap_std": 0.006,
+      "recall_at_k": 0.027
+    },
+    {
+      "factor": 10,
+      "method": "规则：某行件数 / 该商品常见件数",
+      "ap": 0.063,
+      "ap_std": 0.018,
+      "recall_at_k": 0.074
+    }
+  ],
+  "contamination": [
+    {
+      "contamination": "auto",
+      "offset": -0.5,
+      "flagged": 3391,
+      "caught": 167,
+      "ap": 0.212
+    },
+    {
+      "contamination": 0.001,
+      "offset": -0.691,
+      "flagged": 19,
+      "caught": 14,
+      "ap": 0.212
+    },
+    {
+      "contamination": 0.01,
+      "offset": -0.658,
+      "flagged": 184,
+      "caught": 41,
+      "ap": 0.212
+    },
+    {
+      "contamination": 0.05,
+      "offset": -0.581,
+      "flagged": 920,
+      "caught": 124,
+      "ap": 0.212
+    }
+  ]
+}
